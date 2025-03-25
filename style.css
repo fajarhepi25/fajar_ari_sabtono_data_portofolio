@@ -1,0 +1,317 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0;
+}
+
+/* Header Section */
+.hero {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-evenly; 
+  align-items:stretch;
+  background: linear-gradient(135deg, #f1f1f1, #ffffff);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+  padding: 20px ; /* Reduced padding */
+  text-align: center;
+  border-radius: 5px;
+  min-height: 10vh; /* Reduced height */
+  gap : 20px;
+}
+
+.profile_pic1 {
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover; 
+  border: 2px solid #d1c8b3; 
+  margin-right: 20px;
+  margin-bottom: 1rem;
+}
+
+.intro h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem; 
+}
+
+.intro p {
+  font-size: 0.9rem;
+  margin-bottom: 0.1rem;
+  color: #555;
+}
+
+
+/* Contact Section */
+.contact {
+  padding: 5px;
+  background-color: #ffffff;
+  margin: 0.2rem auto;
+  max-width: 800px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  text-align: center; /* Centers the email text */
+  font-size: 0.5rem; /* Smaller font size */
+}
+
+.contact a {
+  color: #007bff; /* Link color */
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline; /* Underline link on hover */
+}
+
+    /* LinkedIn Link Styling */
+    .contact .linkedin {
+        color: #0077b5; /* LinkedIn Blue */
+        font-weight: bold; /* Makes LinkedIn link stand out */
+    }
+
+        .contact .linkedin:hover {
+            color: #006097; /* Slightly darker blue on hover */
+            text-decoration: underline;
+        }
+
+/* Education Section */
+.education {
+  padding: 0.8rem;
+  background-color: #ffffff;
+  margin: 1rem auto;
+  max-width: 800px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.education h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+  color: #333;
+  text-align: center;
+}
+
+.education ul {
+  list-style: disc inside;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.education p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Work Experience Section */
+.work-experience {
+  padding: 0.8rem;
+  background-color: #ffffff;
+  margin: 1rem auto;
+  max-width: 800px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.work-experience h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+  color: #333;
+  text-align: center;
+}
+
+.work-experience ul {
+  list-style: none;
+  padding: 0;
+}
+
+.work-experience li {
+  margin-bottom: 0.4rem;
+  padding: 0.4rem;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+/* Collapsible Section Styling */
+details {
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+
+summary {
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+details[open] summary {
+    color: #007bff; /* Change color when open */
+}
+
+ul {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+/* Optional styling for nested project items */
+.work-experience .work-experience li li {
+    margin-bottom: 0.5rem;
+}
+
+/* Skills Section */
+.skills {
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 0.8rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+    .skills h2 {
+        font-size: 1.2rem; /* Adjust the font size as needed */
+        color: #333;
+        margin-bottom: 0.3rem; /* Adds space below the h2 */
+    }
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills li {
+  margin-bottom: 0.3rem;
+}
+
+/* Skill item styling */
+.skill-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  background: #f8f9fa;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.skill-item img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px; /* Space between icon and description */
+}
+
+.skill-item span {
+  flex-grow: 1; /* Allow description to take up remaining space */
+}
+
+.skill-item:hover {
+  background: #e9ecef;
+}
+
+/* Make 'Skills' clickable and collapsible */
+.collapsible-button {
+  cursor: pointer;
+  padding: 0;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  text-align: left;
+  outline: none;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.collapsible-button h2 {
+  margin: 0;
+}
+
+.collapsible-button:hover {
+  color: #007bff;
+}
+
+details[open] summary h2 {
+  color: #007bff;
+}
+
+/* Project List Section */
+.project-list {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  margin: 2rem auto;
+  max-width: 900px; /* Adjust width to match other sections */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Project Title */
+.project-list h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Project List */
+.project-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left; /* Aligns the list items to the left */
+}
+
+/* Individual Project Item */
+.project-list li {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #555;
+  padding: 1.5rem;
+  background-color: #ffffff; /* Light background */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Soft shadow */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.project-list li:hover {
+  transform: translateY(-5px); /* Hover effect for a subtle lift */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Stronger shadow on hover */
+}
+
+/* Project Titles for Each Section (Background, Method, Result) */
+.project-list .project-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* Section Previews (Background, Method, Result) */
+.project-list .project-preview {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+/* Add small icons for each section for visual interest */
+/*.project-list .project-preview img {
+  width: 20px; /* Small icon for visual appeal */
+  margin-right: 10px; /* Spacing between icon and text */
+}*/
+
+/* Space between items */
+.project-list li p {
+  margin-bottom: 1rem; /* Ensures proper spacing between paragraphs */
+}
